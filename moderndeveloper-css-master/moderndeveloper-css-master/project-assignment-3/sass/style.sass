@@ -1,0 +1,106 @@
+*
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.container
+    max-width: 40rem
+    margin: 0 auto
+
+h1
+    text-align: center
+    margin-top: 100px
+    font-weight: 300
+    letter-spacing: 1px
+
+.card
+    border-radius: 2px
+    max-width: 450px
+    margin: 20px auto
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)
+
+.card__pic
+    border-top-left-radius: 2px
+    border-top-right-radius: 2px
+    position: relative
+    background-image: url('https://avatars2.githubusercontent.com/u/6487613?v=3&s=460')
+    height: 200px
+    background-position: left center
+
+.overlay
+    border-top-left-radius: 2px
+    border-top-right-radius: 2px
+    background-color: rgba(0,0,0,0.6)
+    width: 100%
+    height: 100%
+    
+.card__name
+    text-transform: uppercase
+    position: absolute
+    font-weight: 200
+    bottom: 0
+    right: 0
+    font-size: 2.5rem
+    color: #fff
+    margin-right: 10px
+    span
+        &:nth-child(2)
+            font-weight: bold
+        
+.card__info
+    padding: 20px
+    h4
+        text-transform: uppercase
+        text-align: center
+        font-size: 16px
+    p
+        color: #AAA
+        line-height: 36px
+    span
+        color: #000
+        font-weight: bold
+
+.card__link
+    width: 100%
+    border-top: 1px solid rgba(0,0,0,.1)
+    padding: 10px 0
+    .links
+        max-width: 50%
+        margin: 0 auto
+        text-align: center
+        a
+            text-decoration: none
+            color: #444
+            font-size: 30px
+            transition: color 0.2s ease-in-out
+            &:nth-child(1)
+                margin-right: 20px
+                &:hover
+                    color: #00aced
+            &:nth-child(2):hover
+                color: #885ead
+
+
+//  BUTTON
+.back-button
+    text-align: center
+    text-decoration: none
+    display: block
+    position: fixed
+    top: 25px
+    left: 25px
+    font-size: 1rem
+    font-weight: 400
+    letter-spacing: 1px
+    width: 140px
+    background-color: #18C2C0
+    border: none
+    color: #fff
+    padding: 18px
+    border-radius: 5px
+    outline: none
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+    &:hover
+        background-color: #15aeac
+    &:active
+        background-color: #139b99

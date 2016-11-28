@@ -1,0 +1,437 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300);
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: 100vh;
+}
+
+.container, .me {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.me {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 450px;
+    padding: 0;
+    background-color: #161618;
+}
+
+@media only screen and (min-width:64.0625rem) {
+    .me {
+        width: 50%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        overflow: auto;
+        height: 100%;
+        padding: 30px;
+    }
+}
+
+.me .turing {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-filter: sepia(90%) grayscale(50%) saturate(30%) opacity(40%);
+            filter: sepia(90%) grayscale(50%) saturate(30%) opacity(40%);
+    width: auto;
+    height: 50%;
+}
+
+@media only screen and (min-width:64.0625rem) {
+    .me .turing {
+        height: 40%;
+        position: absolute;
+        -webkit-filter: sepia(90%) grayscale(50%) saturate(30%) opacity(40%);
+                filter: sepia(90%) grayscale(50%) saturate(30%) opacity(40%);
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.showcase {
+    height: auto;
+    width: 100%;
+    left: auto;
+    background-color: #f5f5f5;
+}
+
+@media only screen and (min-width:64.0625rem) {
+    .showcase {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        overflow: auto;
+        min-height: 100vh;
+    }
+}
+
+.profile {
+    text-align: center;
+    color: #f0f0f0;
+    font-family: Quicksand, sans-serif;
+}
+
+.profile .img {
+    margin: 0 auto;
+    background: url(https://avatars2.githubusercontent.com/u/6487613?s=460&v=3);
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+                0 3px 1px -2px rgba(0, 0, 0, .2),
+                0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+@media only screen and (min-width:64.0625rem) {
+    .profile .img {
+        background-size: 200px 200px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.profile .img .overlay {
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media only screen and (min-width:48.0625rem) {
+    .profile h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width:64.0625rem) {
+    .profile h1 {
+        margin: .6em 0;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+}
+
+.profile p {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: default;
+    color: #161618;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: .8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #f0f0f0;
+    max-width: 150px;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 2px 2px 0 #fff, 0 5px 1px -2px #fff, 0 1px 5px 0 #fff;
+}
+
+@media only screen and (min-width:64.0625rem) {
+    .profile p {
+        font-size: 1rem;
+    }
+}
+
+.profile blockquote {
+    z-index: 1;
+    padding-top: 30px;
+    position: relative;
+    text-align: left;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    font-family: Muli, serif;
+    font-weight: 700;
+}
+
+@media only screen and (min-width:40.0625rem) {
+    .profile blockquote {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (min-width:48.0625rem) {
+    .profile blockquote {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width:64.0625rem) {
+    .profile blockquote {
+        font-size: 2rem;
+        margin-top: 100px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.profile blockquote:before {
+    color: #f0f0f0;
+    content: open-quote;
+    font-size: 2rem;
+    font-family: serif;
+    position: absolute;
+    top: 0;
+    font-weight: 700;
+}
+
+@media only screen and (min-width:64.0625rem) {
+    .profile blockquote:before {
+        font-size: 4rem;
+        top: -20px;
+    }
+}
+
+.profile blockquote cite {
+    display: block;
+    margin-top: 20px;
+    font-size: .8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width:64.0625rem) {
+    .profile blockquote cite {
+        font-size: 1rem;
+    }
+}
+
+.profile blockquote a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.projects {
+    padding: 20px 20px 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Quicksand, sans-serif;
+}
+
+@media only screen and (min-width:48.0625rem) {
+    .projects {
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+}
+
+.assignment-1, .assignment-2, .assignment-3, .assignment-4, .assignment-5,
+.assignment-6 {
+    margin-top: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    box-sizing: border-box;
+    width: 300px;
+    min-height: 465px;
+    border-radius: 20px;
+    transition: box-shadow .25s cubic-bezier(.25, .46, .45, .94) 0s;
+}
+
+@media only screen and (min-width:40.0625rem) {
+    .assignment-1, .assignment-2, .assignment-3, .assignment-4, .assignment-5,
+    .assignment-6 {
+        width: 380px;
+    }
+}
+
+@media only screen and (min-width:48.0625rem) {
+    .assignment-1, .assignment-2, .assignment-3, .assignment-4, .assignment-5,
+    .assignment-6 {
+        width: 325px;
+    }
+}
+
+@media only screen and (min-width:64.0625rem) {
+    .assignment-1, .assignment-2, .assignment-3, .assignment-4, .assignment-5,
+    .assignment-6 {
+        width: 380px;
+    }
+}
+
+.assignment-1 .screenshot, .assignment-2 .screenshot, .assignment-3 .screenshot,
+.assignment-4 .screenshot, .assignment-5 .screenshot, .assignment-6 .screenshot {
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 9;
+        flex: 9;
+    transition: all 5s linear;
+    background-position: 0 0;
+}
+
+.assignment-1 .screenshot .overlay, .assignment-2 .screenshot .overlay,
+.assignment-3 .screenshot .overlay, .assignment-4 .screenshot .overlay,
+.assignment-5 .screenshot .overlay, .assignment-6 .screenshot .overlay {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    transition: background-color .5s ease-in-out;
+}
+
+.assignment-1 .screenshot .overlay span, .assignment-2 .screenshot .overlay span,
+.assignment-3 .screenshot .overlay span, .assignment-4 .screenshot .overlay span,
+.assignment-5 .screenshot .overlay span, .assignment-6 .screenshot .overlay span {
+    display: block;
+    text-align: left;
+    transform: scale(0);
+    opacity: 0;
+    color: #fff;
+    font-weight: 700;
+    line-height: 20px;
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275) .1s;
+}
+
+.assignment-1 .screenshot .overlay span:first-child,
+.assignment-2 .screenshot .overlay span:first-child,
+.assignment-3 .screenshot .overlay span:first-child,
+.assignment-4 .screenshot .overlay span:first-child,
+.assignment-5 .screenshot .overlay span:first-child,
+.assignment-6 .screenshot .overlay span:first-child {
+    font-size: 1.5rem;
+}
+
+.assignment-1 .screenshot .overlay span:nth-child(2),
+.assignment-2 .screenshot .overlay span:nth-child(2),
+.assignment-3 .screenshot .overlay span:nth-child(2),
+.assignment-4 .screenshot .overlay span:nth-child(2),
+.assignment-5 .screenshot .overlay span:nth-child(2),
+.assignment-6 .screenshot .overlay span:nth-child(2) {
+    margin-top: 20px;
+}
+
+.assignment-1 .screenshot:hover .overlay,
+.assignment-2 .screenshot:hover .overlay,
+.assignment-3 .screenshot:hover .overlay,
+.assignment-4 .screenshot:hover .overlay,
+.assignment-5 .screenshot:hover .overlay,
+.assignment-6 .screenshot:hover .overlay {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.assignment-1 .screenshot:hover .overlay span,
+.assignment-2 .screenshot:hover .overlay span,
+.assignment-3 .screenshot:hover .overlay span,
+.assignment-4 .screenshot:hover .overlay span,
+.assignment-5 .screenshot:hover .overlay span,
+.assignment-6 .screenshot:hover .overlay span {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.assignment-1 .screenshot:hover, .assignment-2 .screenshot:hover,
+.assignment-3 .screenshot:hover, .assignment-4 .screenshot:hover,
+.assignment-5 .screenshot:hover, .assignment-6 .screenshot:hover {
+    background-position: 100% 100%;
+}
+
+.assignment-1 .label, .assignment-2 .label, .assignment-3 .label,
+.assignment-4 .label, .assignment-5 .label, .assignment-6 .label {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+        flex: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #161618;
+    color: #f0f0f0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.assignment-1:hover, .assignment-2:hover, .assignment-3:hover,
+.assignment-4:hover, .assignment-5:hover, .assignment-6:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+}
+
+.assignment-1 .screenshot {
+    background-image: url(../assets/images/pa1.png);
+}
+
+.assignment-2 .screenshot {
+    background-image: url(../assets/images/pa2.png);
+}
+
+.assignment-2 .screenshot:hover .overlay {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.assignment-3 .screenshot {
+    background-image: url(../assets/images/pa3.png);
+    background-position: 20% 10%;
+}
+
+.assignment-3 .screenshot:hover .overlay {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.assignment-4 .screenshot {
+    background-image: url(../assets/images/pa4.png);
+}
+
+.assignment-5 .screenshot {
+    background-image: url(../assets/images/pa5.png);
+}
+
+.assignment-6 .screenshot {
+    background-image: url(../assets/images/pa6.png);
+}

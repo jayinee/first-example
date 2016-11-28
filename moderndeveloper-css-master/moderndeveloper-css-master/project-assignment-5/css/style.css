@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-family: Lato, sans-serif;
+    background: linear-gradient(135deg, #a763cb 5%, #f69377 78%);
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.app {
+    width: 400px;
+    height: 600px;
+    margin: auto;
+}
+
+.cal__container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px 0 rgba(50, 50, 50, .5);
+}
+
+.cal__container, .cal__results {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+}
+
+.cal__results {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: default;
+    font-family: Open Sans;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #fff;
+    flex-direction: column;
+    -ms-flex: 1.7;
+        flex: 1.7;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.cal__results .current__result, .cal__results .last__result {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+        flex: 1;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.cal__results .last__result {
+    color: #8e97a2;
+    font-size: 1.3rem;
+    font-weight: 300;
+    -ms-flex-align: end;
+    -ms-grid-row-align: flex-end;
+    align-items: flex-end;
+}
+
+.cal__results .current__result {
+    -ms-flex-align: start;
+    -ms-grid-row-align: flex-start;
+    align-items: flex-start;
+    -ms-flex: 1.1;
+        flex: 1.1;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.cal__buttons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 5;
+        flex: 5;
+}
+
+.br {
+    border-bottom-right-radius: 15px;
+}
+
+.bl {
+    border-bottom-left-radius: 15px;
+}
+
+button {
+    font-size: 1.9rem;
+    color: #444;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    border: none;
+    box-shadow: inset 1px 1px 0 0 #decae5;
+    background-color: #fff;
+    outline: none;
+    transition: all .2s cubic-bezier(.4, 0, .2, 1);
+}
+
+button:hover {
+    font-size: 2.2rem;
+}
+
+.row.one button {
+    background-color: #f1e1fd;
+}
+
+.row.one button:hover {
+    background-color: #e3e1fd;
+}
+
+.row.three button, .row.two button {
+    background-color: #faedff;
+}
+
+.row.three button:hover, .row.two button:hover {
+    background-color: #edf2ff;
+}
+
+.row.five button, .row.four button {
+    background-color: #f1edff;
+}
+
+.row.five button:hover, .row.four button:hover {
+    background-color: #fbffed;
+}
+
+.operators {
+    background: linear-gradient(180deg, #f7cf62, #ff9d66 82%);
+}
+
+.operators button {
+    font-size: 2em;
+    font-weight: 300;
+    color: #fff;
+    background-color: transparent;
+}
+
+.operators button:hover {
+    background-color: rgba(50, 50, 50, .1);
+    font-size: 3rem;
+}
+
+.row {
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+
+.column, .row {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.column {
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+
+.f1 {
+    -ms-flex: 1;
+        flex: 1;
+}
+
+.f2 {
+    -ms-flex: 2;
+        flex: 2;
+}
+
+.f3 {
+    -ms-flex: 3;
+        flex: 3;
+}
+
+.back-button {
+    text-decoration: none;
+    display: block;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 140px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 18px;
+    border-radius: 5px;
+    outline: none;
+    transition: color .2s cubic-bezier(.4, 0, .2, 1);
+}
+
+.back-button:hover {
+    color: #f7cf62;
+}

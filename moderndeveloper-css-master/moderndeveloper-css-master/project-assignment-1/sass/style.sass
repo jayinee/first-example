@@ -1,0 +1,288 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,300)
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300)
+@import './_mixins.scss'
+
+
+$bg: #161618
+
+
+*   
+    box-sizing: border-box
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.container
+    position: relative
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: 100vh
+
+.me
+    position: relative // new line
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    width: 100%
+    min-height: 450px
+    padding: 0
+    @include large
+        width: 50%
+        position: fixed
+        left: 0
+        top: 0
+        overflow: auto
+        height: 100%
+        padding: 30px
+    background-color: $bg
+    .turing
+        position: absolute
+        bottom: 0
+        right: 0
+        filter: sepia(90%) grayscale(50%) saturate(30%) opacity(40%)
+        width: auto // to scale images in propotion
+        height: 50%
+        @include large
+            height: 40%
+            position: absolute
+            filter: sepia(90%) grayscale(50%) saturate(30%) opacity(40%)
+            right: 0
+            bottom: 0
+
+.showcase
+    height: auto
+    width: 100%
+    @include large
+        position: absolute
+        right: 0
+        top: 0
+        width: 50%
+        overflow: auto
+        min-height: 100vh
+    left: auto
+    background-color: whitesmoke
+
+//////////////////////////////////////////////////////////////////////////////////////
+///
+///               PROFILE 
+///
+//////////////////////////////////////////////////////////////////////////////////////
+.profile
+    text-align: center
+    color: #F0F0F0
+    font-family: 'Quicksand', sans-serif
+    .img
+        margin: 0 auto
+        background: url('https://avatars2.githubusercontent.com/u/6487613?v=3&s=460')
+        background-size: 100px 100px
+        width: 100px 
+        height: 100px
+        @include large 
+            background-size: 200px 200px
+            width: 200px 
+            height: 200px
+        border-radius: 50%
+        margin-bottom: 10px
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)
+        .overlay
+            background-color: rgba(0,0,0,0.4)
+            width: 100%
+            height: 100%
+            border-radius: 50%
+    h1
+        font-size: 1.5rem
+        text-transform: uppercase
+        letter-spacing: 2px
+        @include medium
+            margin: 0
+            font-size: 2rem
+        @include large
+            margin: 0.6em 0
+            font-size: 2.5rem
+            font-weight: 400
+    p
+        user-select: none
+        cursor: default
+        color: $bg
+        margin: 0 auto
+        margin-top: 10px
+        font-size: 0.8rem
+        @include large
+            font-size: 1rem
+        font-weight: bold
+        text-transform: uppercase
+        background-color: #F0F0F0
+        max-width: 150px
+        padding: 10px
+        border-radius: 50px
+        box-shadow: 0 2px 2px 0 rgba(255,255,255,1),0 5px 1px -2px rgba(255,255,255,1),0 1px 5px 0 rgba(255,255,255,1)
+    blockquote
+        z-index: 1
+        padding-top: 30px
+        @include small
+            padding-left: 100px
+            padding-right: 100px
+        position: relative
+        text-align: left
+        font-size: 0.8rem
+        @include medium
+            font-size: 1rem
+        @include large
+            font-size: 2rem
+            margin-top: 100px
+            padding-left: 0px
+            padding-right: 0px
+        letter-spacing: 2px
+        font-family: 'Muli', serif
+        font-weight: bold
+        &:before
+            color: #F0F0F0
+            content: open-quote
+            font-size: 2rem
+            @include large
+                font-size: 4rem
+            font-family: serif
+            position: absolute
+            top: 0
+            @include large
+                top: -20px
+            font-weight: bold
+        cite
+            display: block
+            margin-top: 20px
+            font-size: 0.8rem
+            @include large
+                font-size: 1rem
+            font-weight: 400
+            text-transform: uppercase
+        a
+            text-decoration: none
+            color: #F0F0F0
+
+//////////////////////////////////////////////////////////////////////////////////////
+///
+///              PROJECTS 
+///
+//////////////////////////////////////////////////////////////////////////////////////
+.projects
+    padding: 20px 20px 50px
+    display: flex
+    flex-direction: column
+    @include medium
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-around
+    align-items: center
+    font-family: 'Quicksand', sans-serif
+
+.assignment-1, .assignment-2, .assignment-3, .assignment-4, .assignment-5, .assignment-6
+    margin-top: 50px
+    cursor: pointer
+    text-decoration: none
+    display: flex
+    flex-direction: column
+    box-sizing: border-box
+    width: 300px
+    @include small
+        width: 380px
+    @include medium
+        width: 325px
+    @include large
+        width: 380px
+    min-height: 465px
+    border-radius: 20px
+    transition: box-shadow 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s
+    .screenshot
+        position: relative
+        border-top-left-radius: 20px
+        border-top-right-radius: 20px
+        display: flex
+        flex: 9
+        transition: all 5s linear
+        background-position: 0% 0%
+        .overlay
+            border-top-left-radius: 20px
+            border-top-right-radius: 20px
+            display: flex
+            align-items: center
+            justify-content: center
+            position: absolute
+            background-color: transparent
+            width: 100%
+            height: 100%
+            transition: background-color 0.5s ease-in-out
+            span
+                display: block
+                text-align: left
+                transform: scale(0)
+                opacity: 0
+                color: #fff
+                font-weight: 700
+                line-height: 20px
+                transition: all 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+                &:first-child
+                    font-size: 1.5rem
+                &:nth-child(2)
+                    margin-top: 20px
+        &:hover
+            .overlay
+                background-color: rgba(0,0,0,0.3)
+            .overlay span
+                transform: scale(1)
+                opacity: 1
+        &:hover
+            background-position: 100% 100%
+    .label
+        display: flex
+        flex: 1
+        align-items: center
+        justify-content: center
+        background-color: $bg
+        color: #F0F0F0
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 2px
+        border-bottom-left-radius: 20px
+        border-bottom-right-radius: 20px
+    &:hover
+        box-shadow: 0 0 50px rgba(0,0,0,0.5)
+
+.assignment-1 .screenshot
+    background-image: url('../assets/images/pa1.png')
+
+.assignment-2 .screenshot
+    background-image: url('../assets/images/pa2.png')
+    &:hover
+        .overlay
+            background-color: rgba(0,0,0,0.5)
+
+.assignment-3 .screenshot
+    background-image: url('../assets/images/pa3.png')
+    background-position: 20% 10%
+    &:hover
+        .overlay
+            background-color: rgba(0,0,0,0.5)
+
+.assignment-4 .screenshot
+    background-image: url('../assets/images/pa4.png')
+
+.assignment-5 .screenshot
+    background-image: url('../assets/images/pa5.png')
+
+.assignment-6 .screenshot
+    background-image: url('../assets/images/pa6.png')
+
+
+
+
+
+
+
+
+
+
+
+
+

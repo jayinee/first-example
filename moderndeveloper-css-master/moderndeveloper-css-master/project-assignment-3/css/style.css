@@ -1,0 +1,138 @@
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.card {
+    border-radius: 2px;
+    max-width: 450px;
+    margin: 20px auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+                0 3px 1px -2px rgba(0, 0, 0, .2),
+                0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.card__pic {
+    position: relative;
+    background-image: url(https://avatars2.githubusercontent.com/u/6487613?s=460&v=3);
+    height: 200px;
+    background-position: 0;
+}
+
+.card__pic, .overlay {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+}
+
+.card__name {
+    text-transform: uppercase;
+    position: absolute;
+    font-weight: 200;
+    bottom: 0;
+    right: 0;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.card__name span:nth-child(2) {
+    font-weight: 700;
+}
+
+.card__info {
+    padding: 20px;
+}
+
+.card__info h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+}
+
+.card__info p {
+    color: #aaa;
+    line-height: 36px;
+}
+
+.card__info span {
+    color: #000;
+    font-weight: 700;
+}
+
+.card__link {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    padding: 10px 0;
+}
+
+.card__link .links {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card__link .links a {
+    text-decoration: none;
+    color: #444;
+    font-size: 30px;
+    transition: color .2s ease-in-out;
+}
+
+.card__link .links a:nth-child(1) {
+    margin-right: 20px;
+}
+
+.card__link .links a:nth-child(1):hover {
+    color: #00aced;
+}
+
+.card__link .links a:nth-child(2):hover {
+    color: #885ead;
+}
+
+.back-button {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 140px;
+    background-color: #18c2c0;
+    border: none;
+    color: #fff;
+    padding: 18px;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color .2s cubic-bezier(.4, 0, .2, 1);
+}
+
+.back-button:hover {
+    background-color: #15aeac;
+}
+
+.back-button:active {
+    background-color: #139b99;
+}

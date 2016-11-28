@@ -1,0 +1,1226 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,700,300,100,500)
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700,900)
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900)
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,300,500,600,700,900)
+@import url(https://fonts.googleapis.com/css?family=Oxygen:700,400,300)
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css)
+
+/////////////////////////////////////////////////////////////
+//                                                         //
+///               PAGE CONTROL                           ///
+////                                                   ////
+//////////////////////////////////////////////////////////
+.page__control
+    position: fixed
+    top: 50%
+    transform: translateY(-50%)
+    right: 20px
+    .nav
+        margin-top: 10px
+        &:first-child
+            margin-top: 0px
+
+    .dot
+        display: block
+        width: 8px
+        height: 8px
+        border: 2px solid #fff
+        background-color: transparent
+        border-radius: 50px
+        transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+
+    .dot.active
+        background-color: #fff
+
+
+.hint
+    opacity: 0
+    text-transform: none
+    position: absolute
+    text-align: left
+    font-size: 13px
+    margin-bottom: 0
+    transition: opacity 0.2s ease
+
+.error
+    opacity: 0
+    transition: opacity 0.2s ease
+    font-size: 14px
+/////////////////////////////////////////////////////////////
+//                                                         //
+///                  INTRO PAGE                          ///
+////                                                   ////
+//////////////////////////////////////////////////////////
+#intro
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: row
+    font-size: 4rem
+    text-align: center
+    font-family: 'Raleway'
+    color: white
+    background-color: #E0E0E0
+    text-shadow: 0 1px 0 hsl(174, 5%, 80%), 0 2px 0 hsl(174, 5%, 75%), 0 3px 0 hsl(174, 5%, 70%), 0 4px 0 hsl(174, 5%, 66%), 0 5px 0 hsl(174, 5%, 64%), 0 6px 0 hsl(174, 5%, 62%), 0 7px 0 hsl(174, 5%, 61%), 0 8px 0 hsl(174, 5%, 60%), 0 0 5px rgba(0, 0, 0, .05), 0 1px 3px rgba(0, 0, 0, .2), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .3)
+
+/////////////////////////////////////////////////////////////
+//                                                         //
+///                  QUESTION ONE                        ///
+////                                                   ////
+//////////////////////////////////////////////////////////
+
+#one
+    height: 100vh
+    background: linear-gradient(to right,#454BE6, #44A0C3, #3FDAAC)
+    font-family: 'Roboto', sans-serif
+    h1
+        text-align: center
+        color: #fff
+        letter-spacing: 2px
+        font-weight: 300
+
+    .container
+        max-width: 60rem
+        margin: 0 auto
+        padding-top: 100px
+    .signup
+        text-align: center
+        max-width: 400px
+        margin: 0 auto
+        background-color: #fff
+        min-height: 400px
+        border-radius: 10px
+        padding: 10px
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
+        svg
+            display: block
+            margin: 0 auto
+            font-size: 50px
+            color: #454BE6
+            padding: 30px 0
+    form
+        padding: 0 50px
+        div
+            position: relative
+            margin-bottom: 45px
+            &:nth-of-type(5)
+                margin-bottom: 0
+        input
+            border: none
+            border-bottom: 1px solid #456CD5
+            color: #454BE6
+            outline: none
+            width: 100%
+            font-weight: 300
+            &::placeholder
+                color: #456CD5
+                font-weight: 300
+
+    button
+        cursor: pointer
+        border: none
+        background-color: #456CD5
+        color: #fff
+        width: 50%
+        padding: 10px 20px
+        border-radius: 20px
+        text-transform: uppercase
+        letter-spacing: 1.2px
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)
+        margin-bottom: 40px
+        margin-top: 40px
+        outline: none
+        transition: background-color 0.2s ease
+        &:hover
+            background-color: #3e61bf
+        &:active
+            background-color: #304a93
+
+    input[type=date]
+        font-weight: 300
+        color: #456CD5
+
+    .question
+        text-align: left
+        max-width: 400px
+        margin: 0 auto
+        margin-top: 20px
+        color: #fff
+        font-size: 12px
+        font-weight: 300
+        letter-spacing: 0.5px
+        a
+            text-decoration: none
+            color: #fff
+            font-weight: bold
+
+/////////////////////////////////////////////////////////////
+//                                                         //
+///                  QUESTION TWO                        ///
+////                                                   ////
+//////////////////////////////////////////////////////////
+
+#two
+    font-family: 'Varela Round', sans-serif
+    .container
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 100vh
+        background: linear-gradient(135deg, #74bddb 0%, #a8d1eb 32%, #cddbf5 56%, #e4e6fb 73%, #f6f4f8 100%)
+        flex-direction: column
+
+    .search
+        display: flex
+        flex-direction: row
+        border: 2px solid #A186D3
+        border-radius: 5px
+        padding: 20px
+        align-items: center
+
+    input[type=search]
+        font-size: 17px
+        background-color: transparent
+        border: none
+        outline: none
+        &::placeholder
+            color: #A186D3
+            opacity: 0.5
+        color: #777
+
+    .categories
+        user-select: none
+        position: relative
+        margin-left: 20px
+        z-index: 1
+        &:after
+            content: ""
+            pointer-events: none
+            position: absolute
+            right: 5px
+            margin-top: -3px
+            top: 50%
+            width: 6px
+            height: 6px
+            width: 0
+            height: 0
+            border-left: 6px solid transparent
+            border-right: 6px solid transparent
+            border-top: 6px solid rgba(0,0,0,0.25)
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+        &:hover
+            select
+                color: #7956B9
+            &:after
+                border-top: 6px solid rgba(0,0,0,0.5)
+
+    select
+        cursor: pointer
+        appearance: none
+        background-color: transparent
+        border: none
+        outline: none
+        color: #A186D3
+        padding-right: 30px
+        transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+
+    .submit
+        cursor: pointer
+        padding-top: 5px
+        margin-left: 10px
+        background-color: transparent
+        border: none
+        outline: none
+        i
+            font-size: 20px
+            color: #A186D3
+            transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+        &:hover
+            i
+                color: #7956B9
+
+    .note
+        margin-top: 80px
+        font-size: 14px
+        color: #A186D3
+        opacity: 0.6
+
+/////////////////////////////////////////////////////////////
+//                                                         //
+///                  QUESTION THREE                      ///
+////                                                   ////
+//////////////////////////////////////////////////////////
+#three
+    background-color: #171A3D
+    font-family: 'Lato', sans-serif
+    height: 100vh
+    z-index: -1
+    .container
+        text-align: center
+        max-width: 60rem
+        margin: 0 auto
+    h1
+        color: #fff
+        text-align: center
+
+    .question
+        width: 100%
+        margin: 0 auto
+        padding-top: 150px
+        margin-bottom: 50px
+
+    form
+        text-align: left
+        width: 40%
+        margin: 0 auto
+
+    .opt
+        margin-top: 50px
+        position: relative
+    label
+        margin-left: 24px
+        font-size: 1rem
+        cursor: pointer
+        font-weight: 700
+        letter-spacing: 0.5px
+        color: #fff
+    input[type=radio]
+        cursor: pointer
+        position: relative
+        opacity: 0
+        margin-left: -14px
+        z-index: 1
+    .radio
+        cursor: pointer
+        box-sizing: border-box
+        position: absolute
+        top: -2px
+        left: -20px
+        border: 3px solid #414365
+        width: 25px
+        height: 25px
+        border-radius: 50%
+        background-color: #292B52
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+        &::before
+            position: absolute
+            content: ''
+            border-radius: 50%
+            top: 5px
+            left: 5px
+            width: 9px
+            height: 9px
+            background-color: transparent
+            transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+
+    input[type=radio]:checked ~ .radio
+        border: 3px solid #90E1E3
+        background-color: #18C2C0
+        &::before
+            background-color: #fff
+
+    input[type=text]
+        margin-left: 30px
+        display: block
+        margin-top: 20px
+        max-width: 300px
+        background-color: transparent
+        font-family: 'Source Code Pro'
+        border: none
+        outline: none
+        color: white
+        border-bottom: 1px solid #444880
+        transition: border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+        &::placeholder
+            font-family: 'Source Code Pro'
+            color: #444880
+        &:focus, &:active
+            border-color: #6469ad
+    .button
+        margin-top: 50px
+        display: flex
+        justify-content: center
+    .button button
+        cursor: pointer
+        font-size: 1.2rem
+        font-weight: 400
+        letter-spacing: 1px
+        background-color: #18C2C0
+        border: none
+        color: #fff
+        padding: 10px 40px
+        border-radius: 5px
+        outline: none
+        transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+        &:hover
+            background-color: #15aeac
+        &:active
+            background-color: #139b99
+
+/////////////////////////////////////////////////////////////
+//                                                         //
+///                  QUESTION FOUR                       ///
+////                                                   ////
+//////////////////////////////////////////////////////////
+#four
+    height: 100vh
+    background: linear-gradient(to right,#454BE6, #44A0C3, #3FDAAC)
+    font-family: 'Roboto', sans-serif
+    h1
+        text-align: center
+        color: #fff
+        letter-spacing: 2px
+        font-weight: 300
+        cursor: pointer
+
+    .container
+        max-width: 60rem
+        margin: 0 auto
+        padding-top: 100px
+    .signup
+        text-align: center
+        max-width: 400px
+        margin: 0 auto
+        background-color: #fff
+        min-height: 200px
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
+        overflow: auto
+        zoom: 1
+        svg
+            margin: 0 auto
+            display: block
+            font-size: 50px
+            color: #454BE6
+            padding: 30px 0
+        .or
+            text-transform: uppercase
+            font-size: 10px
+            display: inline-block
+            vertical-align: basline
+            position: relative
+            color: #AAA
+            margin-bottom: 10px
+            letter-spacing: 2px
+            &::before
+                content: ''
+                display: block
+                width: 100px
+                position: absolute
+                top: 0.5em
+                right: 110%
+                border-top: 1px solid #AAA
+            &::after
+                content: ''
+                display: block
+                width: 100px
+                position: absolute
+                top: 0.5em
+                left: 110%
+                border-top: 1px solid #AAA
+
+    form
+        padding: 0 50px
+        div
+            position: relative
+            margin-bottom: 40px
+            &:nth-child(2)
+                margin-bottom: 0
+        input
+            border: none
+            border-bottom: 1px solid #456CD5
+            color: #454BE6
+            outline: none
+            width: 100%
+            margin-top: 40px
+            font-weight: 300
+            &:nth-child(1)
+                margin-top: 0px
+            &::placeholder
+                color: #456CD5
+                font-weight: 300
+        h1
+            color: #456CD5
+            font-size: 12px
+            margin-bottom: 40px
+            font-weight: 400
+            letter-spacing: 0
+
+    button
+        cursor: pointer
+        border: none
+        background-color: #456CD5
+        color: #fff
+        width: 50%
+        padding: 10px 20px
+        border-radius: 20px
+        text-transform: uppercase
+        letter-spacing: 1.2px
+        outline: none
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)
+        margin-bottom: 20px
+        margin-top: 40px
+        transition: background-color 0.2s ease
+        &:hover
+            background-color: #3e61bf
+        &:active
+            background-color: #304a93
+
+    input[type=date]
+        font-weight: 300
+        color: #456CD5
+
+    .social
+        min-height: 20px
+        max-width: 400px
+        margin: 0 auto
+        color: #fff
+        font-size: 30px
+        .facebook
+            box-sizing: border-box
+            cursor: pointer
+            float: left
+            width: 50%
+            height: 100%
+            background-color: #3B5998
+            padding: 10px
+        .twitter
+            box-sizing: border-box
+            cursor: pointer
+            float: right
+            height: 100%
+            background-color: #55acee
+            width: 50%
+            padding: 10px
+
+    .question
+        cursor: default
+        text-align: left
+        max-width: 400px
+        margin: 0 auto
+        margin-top: 30px
+        color: #fff
+        font-size: 12px
+        font-weight: 300
+        letter-spacing: 0.5px
+        a
+            text-decoration: none
+            color: #fff
+            font-weight: bold
+
+/////////////////////////////////////////////////////////////
+//                                                         //
+///                  QUESTION FIVE                       ///
+////                                                   ////
+//////////////////////////////////////////////////////////
+
+#five
+    .container
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 100vh
+        flex-direction: column
+
+    .controls
+        display: flex
+
+    .control
+        display: flex
+        position: relative
+        margin-right: 20px
+        &:nth-child(4)
+            margin-right: 0
+
+
+    .color
+        cursor: default
+        pointer-events: none
+        font-size: 2rem
+        color: #444
+        font-family: 'Roboto'
+        font-weight: 700
+        position: absolute
+        top: -50px
+        width: 20px
+        margin-left: -10px
+        left: 50%
+
+    input[type=range]
+        width: 15vw
+        z-index: 1
+        cursor: pointer
+        outline: 0
+        appearance: none
+        background: transparent
+        height: 2px
+        // webkit thumb
+        &::-webkit-slider-thumb
+            -webkit-appearance: none
+            width: 12px
+            height: 12px
+            box-sizing: border-box
+            border-radius: 50%
+            background: rgb(63,81,181)
+            border: none
+            transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1), transform 0.18s cubic-bezier(0.4, 0, 0.2, 1)
+        // moz thumb
+        &::-moz-range-thumb
+            width: 12px
+            height: 12px
+            box-sizing: border-box
+            border-radius: 50%
+            background-image: none
+            background: rgb(63,81,181)
+            transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1), transform 0.18s cubic-bezier(0.4, 0, 0.2, 1)
+
+    input[type=range].zero
+        &::-webkit-slider-thumb
+            background: transparent
+            border: 2px solid rgba(0,0,0, 0.26)
+        &::-moz-range-thumb
+            background: transparent
+            border: 2px solid rgba(0,0,0, 0.26)
+
+    input[type=range].clicked
+        &::-webkit-slider-thumb
+            background: rgb(63,81,181)
+            transform: scale(1.5)
+        &::-moz-range-thumb
+            background: rgb(63,81,181)
+            transform: scale(1.5)
+
+    input[type=range].zero.clicked
+        &::-webkit-slider-thumb
+            background: transparent
+            transform: scale(1.5)
+        &::-moz-range-thumb
+            background: transparent
+            transform: scale(1.5)
+
+    .sliders
+        position: absolute
+        background: transparent
+        height: 2px
+        width: calc(100% - 24px)
+        left: 0
+        overflow: hidden
+        display: flex
+        margin: 0 12px
+        .lower
+            position: relative
+            flex: 0 1 0%
+            background: #3f51b5
+        .upper
+            left: 0
+            background: rgba(0,0,0,.26)
+            flex: 1 1 0%
+            position: relative
+            transition: left 0.18s cubic-bezier(0.4, 0, 0.2, 1)
+
+    input[type=range].zero:active + .sliders > .upper
+        left: 3px
+
+
+    .output
+        align-items: center
+        margin-top: 40px
+
+
+    input[type=text]
+        text-align: center
+        font-family: 'Roboto'
+        font-weight: 500
+        margin-top: 20px
+        appearance: none
+        border: none
+        background-color: transparent
+        display: inline-block
+        color: #444
+        border-bottom: 2px solid rgb(63,81,181)
+        padding: 10px
+        outline: none
+
+    button
+        cursor: pointer
+        user-select: none
+        position: relative
+        display: inline-block
+        border: none
+        background-color: #456CD5
+        color: #fff
+        width: 110px
+        letter-spacing: 1.2px
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)
+        transition: background-color 0.2s ease
+        padding: 10px 20px
+        border-radius: 3px
+        margin-left: 20px
+        &:hover
+            background-color: #3e61bf
+        &:active, &:focus
+            outline: none
+
+    // Effects
+
+    svg
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+    circle
+        fill: rgba(255,255,255,0.1)
+
+
+/////////////////////////////////////////////////////////////
+//                                                         //
+///                  QUESTION SIX                        ///
+////                                                   ////
+//////////////////////////////////////////////////////////
+$outline: #DADDE8
+$header: #646E8A
+$font: #A4A9C5
+$bg: #ECEEF4
+$hint: #18C2C0
+
+#six
+    background-color: $bg
+    font-family: 'Raleway', sans-serif
+    padding-bottom: 100px
+    .container
+        max-width: 60rem
+        margin: 0 auto
+    .hint
+        bottom: -20px
+
+    .form__name
+        color: #B9BAC5
+        padding: 10px
+        font-size: 1.5rem
+        text-transform: uppercase
+        letter-spacing: 2px
+        font-weight: 700
+        padding-top: 30px
+
+    .form__container
+        width: 100%
+        min-height: 300px
+        background-color: #fff
+        border: 1px solid $outline
+        border-radius: 5px
+        padding: 30px
+        // margin-bottom: 100px
+
+    // PERSONAL -- FORM
+    .personal--form
+        color: $font
+        font-size: 0.7rem
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        font-weight: 700
+        padding: 10px 55px
+        .last
+            margin-left: 40px
+        .first, .last, .email
+            display: inline-block
+            position: relative
+            label
+                margin-bottom: 10px
+            label, input
+                display: block
+                min-width: 250px
+        .email
+            margin-top: 30px
+            input
+                width: 540px
+
+    // Shipping Address
+    .shipping--form
+        color: $font
+        font-size: 0.7rem
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        font-weight: 700
+        padding: 10px 55px
+        margin-top: 10px
+        .row.two, .row.three
+            margin-top: 30px
+        .address-two, .state, .country
+            margin-left: 40px
+        .address, .address-two, .city, .state, .zip, .country
+            display: inline-block
+            position: relative
+            label
+                margin-bottom: 10px
+            label, input
+                display: block
+                min-width: 250px
+
+    // Questions
+    .form__question
+        padding: 10px 55px
+        color: $header
+        p
+            display: inline-block
+            margin-left: 10px
+            font-weight: 500
+            vertical-align: middle
+        input[type=checkbox]
+            cursor: pointer
+            display: inline-block
+            vertical-align: middle
+            appearance: none
+            width: 20px
+            height: 20px
+            background-color: transparent
+            border-radius: 3px
+            border: 2px solid #646E8A
+            transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+            &:checked
+                background-color: $hint
+
+    // GLOBALS
+    input
+        font-size: 0.8rem
+        font-weight: 700
+        letter-spacing: 0.5px
+        background: transparent
+        border: 1px solid $font
+        border-radius: 3px
+        outline: none
+        padding: 10px
+        transition: border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+        color: $hint
+        &:-webkit-autofill
+            -webkit-box-shadow: 0 0 0px 1000px white inset
+            -webkit-text-fill-color: $hint
+        &:focus
+            border-color: $hint
+        &::placeholder
+            font-weight: 500
+            color: $header
+
+    // BUTTON
+    .form__confirmation
+        padding: 10px 55px
+    button
+        cursor: pointer
+        font-size: 12px
+        text-transform: uppercase
+        font-weight: 700
+        letter-spacing: 1px
+        background-color: #18C2C0
+        border: 1px solid $outline
+        color: #fff
+        padding: 18px
+        border-radius: 5px
+        outline: none
+        transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+        position: relative
+        left: 80%
+        &:hover
+            background-color: #15aeac
+        &:active
+            background-color: #139b99
+
+    // UTILITIES
+    .box
+        cursor: default
+        user-select: none
+        display: inline-block
+        font-size: 1.5rem
+        font-weight: 400
+        height: 40px
+        width: 40px
+        line-height: 35px
+        border-radius: 50px
+        border: 2px solid #646E8A
+        text-align: center
+        color: $header
+        &.billing
+            line-height: 30px
+
+    section
+        margin-top: 20px
+        &:nth-child(1)
+            margin-top: 0px
+
+    .sections
+        span
+            color: $header
+            text-transform: uppercase
+            font-weight: 500
+            letter-spacing: 1px
+            margin-left: 15px
+/////////////////////////////////////////////////////////////
+//                                                         //
+///                  QUESTION SEVEN                      ///
+////                                                   ////
+//////////////////////////////////////////////////////////
+
+$headings: #47536A
+$bhint: #15A4FA
+#seven
+    height: 100vh
+    background-color: #E8F0FA
+    font-family: 'Oxygen', sans-serif
+    .container
+        max-width: 60rem
+        margin: 0 auto
+        padding-top: 100px
+
+    .card
+        border-radius: 5px
+        max-width: 40rem
+        margin: 0 auto
+        min-height: 300px
+        background-color: #fff
+        font-weight: 700
+        text-transform: uppercase
+        box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.22), 0 40px 77px 0 rgba(0, 0, 0, 0.22)
+
+    .form__name
+        font-family: 'Oxygen'
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+        font-weight: 900
+        background-color: #15A4FA
+        padding: 20px
+        color: #fff
+        font-size: 1.2rem
+
+    .time__container, .message__container, .contact__container
+        padding: 20px 50px
+
+
+    // FORM TIME / CONTACT
+    .form__time, .form__contact
+        color: $headings
+        font-size: 0.7rem
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        font-weight: 700
+        margin-top: 10px
+        .date, .time, .timezone, .cname, .num, .email
+            display: inline-block
+            label
+                margin-bottom: 10px
+            label, input
+                display: block
+                width: 200px
+        .time, .num
+            margin-left: 20px
+        .timezone, .email
+            margin-top: 10px
+            display: block
+            input
+                width: 200px
+
+    // UTILITIES
+    .section
+        color: $headings
+        .box
+            vertical-align: middle
+            cursor: default
+            user-select: none
+            display: inline-block
+            font-size: 10px
+            font-weight: 900
+            height: 20px
+            width: 20px
+            line-height: 20px
+            border-radius: 50px
+            border: 1px solid $headings
+            background-color: $headings
+            text-align: center
+            color: #fff
+        span
+            vertical-align: middle
+            margin-left: 10px
+    // GLOBALS
+    textarea
+        box-sizing: border-box
+        font-weight: normal
+        padding: 5px
+        margin-top: 20px
+        border: 1px solid $font
+        border-radius: 3px
+        outline: none
+        transition: border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+        color: $bhint
+        &:focus
+            border-color: $bhint
+        &::placeholder
+            font-weight: 300
+            color: #A9A9A9
+
+    select
+        cursor: pointer
+        appearance: none
+        display: block
+        border: 1px solid $font
+        font-size: 0.8rem
+        padding: 12px 10px
+        background-color: transparent
+        color: $bhint
+        outline: none
+        width: 60%
+        &:active
+            border-color: $bhint
+
+    input
+        font-size: 0.8rem
+        font-weight: 700
+        letter-spacing: 0.5px
+        background: transparent
+        border: 1px solid $font
+        border-radius: 3px
+        outline: none
+        padding: 10px
+        transition: border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+        color: $bhint
+        &:-webkit-autofill
+            -webkit-box-shadow: 0 0 0px 1000px white inset
+            -webkit-text-fill-color: $bhint
+        &:focus
+            border-color: $bhint
+        &::placeholder
+            font-weight: 500
+            color: #A9A9A9
+
+    input[type=date]
+        text-transform: uppercase
+
+    // BUTTON
+    .form__confirmation
+        padding: 10px 55px
+    button
+        cursor: pointer
+        font-size: 12px
+        text-transform: uppercase
+        font-weight: 700
+        letter-spacing: 1px
+        background-color: $bhint
+        border: 1px solid $outline
+        color: #fff
+        padding: 18px
+        border-radius: 5px
+        outline: none
+        transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+        position: relative
+        left: 350px
+        margin-bottom: 20px
+        &:hover
+            background-color: #1293e1
+        &:active
+            background-color: #1083c8
+
+/////////////////////////////////////////////////////////////
+//                                                         //
+///                  QUESTION EIGHT                      ///
+////                                                   ////
+//////////////////////////////////////////////////////////
+
+#eight
+    background-color: #171A3D
+    font-family: 'Lato', sans-serif
+    .container
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 100vh
+        flex-direction: column
+    .price
+        h1
+            font-weight: 300
+            color: #18C2C0
+            letter-spacing: 2px
+
+    .card
+        margin-top: 30px
+        margin-bottom: 30px
+        width: 520px
+        height: 400px
+        .row
+            height: 20%
+            width: 100%
+            border-bottom: 1.2px solid #292C58
+            &:last-child
+                border: none
+        .paypal
+            border-top-left-radius: 10px
+            border-top-right-radius: 10px
+        .details
+            border-bottom-left-radius: 10px
+            border-bottom-right-radius: 10px
+        .paypal, .credit
+            background-color: #1E2148
+        .cardholder, .number, .details
+            background-color: #242852
+
+    //////////////////// ROW ONE & TWO
+    .paypal, .credit
+        .left, .right
+            position: relative
+            top: 50%
+            transform: translateY(-50%)
+        .left
+            float: left
+            margin-left: 50px
+            label
+                margin-left: 25px
+                font-size: 1rem
+                cursor: pointer
+                font-weight: 700
+                letter-spacing: 0.5px
+                color: #fff
+            input[type=radio]
+                cursor: pointer
+                position: relative
+                opacity: 0
+                z-index: 1
+                margin-left: -15px
+            .radio
+                cursor: pointer
+                box-sizing: border-box
+                position: absolute
+                top: -2px
+                left: -20px
+                border: 3px solid #414365
+                width: 25px
+                height: 25px
+                border-radius: 50%
+                background-color: #292B52
+                transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+                &::before
+                    position: absolute
+                    content: ''
+                    border-radius: 50%
+                    top: 5px
+                    left: 5px
+                    width: 9px
+                    height: 9px
+                    background-color: transparent
+                    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+        .right
+            float: right
+            margin-right: 30px
+            img
+                width: 42px
+                height: 30px
+                margin-left: 10px
+
+    input[type=radio]:checked ~ .radio
+        border: 3px solid #90E1E3
+        background-color: #18C2C0
+        &::before
+            background-color: #fff
+
+    ////////////////// ROW THREE & FOUR
+    .cardholder, .number
+        .info
+            position: relative
+            top: 50%
+            transform: translateY(-50%)
+            margin-left: 40px
+            label
+                display: inline-block
+                letter-spacing: 0.5px
+                color: #8F92C3
+                width: 100px
+            input
+                display: inline-block
+                max-width: 300px
+                width: 300px
+                background-color: transparent
+                font-family: 'Source Code Pro'
+                border: none
+                outline: none
+                margin-left: 50px
+                color: white
+                &::placeholder
+                    font-family: 'Source Code Pro'
+                    color: #444880
+
+    #cardnumber, #cardnumber::placeholder
+        letter-spacing: 2px
+    ///////////////////// DETAILS
+    .details
+        .left, .right
+            box-sizing: border-box
+            position: relative
+            top: 50%
+            transform: translateY(-50%)
+        .left
+            float: left
+            padding-left: 40px
+            width: 50%
+            label
+                letter-spacing: 0.5px
+                color: #8F92C3
+                width: 100px
+                margin-right: 20px
+            select
+                font-family: 'Source Code Pro'
+                cursor: pointer
+                appearance: none
+                background: transparent
+                border: none
+                outline: none
+                color: #444880
+            span
+                font-family: 'Source Code Pro'
+                color: #444880
+                margin: 0 2px
+        .right
+            float: right
+            width: 50%
+            label
+                margin-right: 20px
+                color: #8F92C3
+            input
+                text-align: center
+                width: 50px
+                font-family: 'Source Code Pro'
+                background: transparent
+                border: none
+                outline: none
+                color: #fff
+                &::placeholder
+                    font-family: 'Source Code Pro'
+                    color: #444880
+            span
+                text-align: center
+                display: inline-block
+                font-family: 'Source Code Pro'
+                cursor: pointer
+                margin-left: 50px
+                color: #18C2C0
+                width: 24px
+                height: 24px
+                border: 2px solid #18C2C0
+                border-radius: 50%
+
+    ///////////////////// Button
+    .button button
+        cursor: pointer
+        font-size: 1.2rem
+        font-weight: 400
+        letter-spacing: 1px
+        width: 520px
+        background-color: #18C2C0
+        border: none
+        color: #fff
+        padding: 18px
+        border-radius: 5px
+        outline: none
+        transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+        &:hover
+            background-color: #15aeac
+        &:active
+            background-color: #139b99
+        i
+            font-size: 1.2rem
+            margin-right: 5px

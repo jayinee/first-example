@@ -1,0 +1,390 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css)
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: -apple-system, BlinkMacSystemFont,  'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',  'Fira Sans', 'Droid Sans', 'Helvetica Neue',  sans-serif
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+$hint: #FECE00
+$border: #DFDFDF
+
+////////////////////////////////////////////////////////
+///                 CONTAINERS:                       //
+///..................................................//
+
+header
+    color: #222
+    z-index: 1
+    position: fixed
+    width: 100%
+    height: 50px
+    line-height: 50px
+    font-weight: 700
+    letter-spacing: 2px
+    text-transform: uppercase
+    border-bottom: 1px solid #eee
+    background-color: #FFF
+    .welcome
+        text-align: left
+        letter-spacing: 0px
+        font-weight: 400
+        text-transform: capitalize
+        padding-left: 20px
+        float: left
+        width: 20%
+    .logo
+        text-align: center
+        float: left
+        width: 60%
+    .search
+        padding-right: 20px
+        font-size: 1.5rem
+        float: right
+        width: 20%
+        text-align: right
+
+.container
+    width: 100%
+    height: 100vh
+
+.nav__container
+    position: fixed
+    top: 50px
+    left: 0
+    bottom: 0
+    width: 100px
+    height: calc(100vh - 50px)
+
+.product__container
+    position: absolute
+    right: 0
+    left: 100px
+    top: 50px
+    width: calc(100% - 100px)
+    overflow: auto
+    min-height: 100vh
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 50px
+    padding-bottom: 120px
+
+////////////////////////////////////////////////////////
+///                      NAV                          //
+///..................................................//
+
+.nav__container
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    a
+        display: flex
+        align-items: center
+        justify-content: center
+        &:first-child
+            padding-top: 40px
+    .svg
+        width: 40px
+        height: 40px
+    .cart, img
+        position: relative
+        width: 45px
+        height: 45px
+    #cart
+        padding-bottom: 40px
+    .count
+        position: absolute
+        top: -15px
+        right: -15px
+        width: 25px
+        height: 25px
+        line-height: 25px
+        background-color: $hint
+        border-radius: 50px
+        color: #fff
+        text-align: center
+        font-weight: 500
+        font-size: 14px
+
+.nav__container .svg
+    fill: #DFDFDF
+    transition: fill 0.2s ease-in-out
+
+.nav__container a:hover .svg
+    fill: $hint
+
+////////////////////////////////////////////////////////
+///                  PRODUCTS                         //
+///..................................................//
+
+.products
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: flex-start
+    .product
+        cursor: pointer
+        height: 425px
+        display: block
+        flex: 0 0 16em
+        position: relative
+        vertical-align: top
+        min-width: 16em
+        background-color: #24252A
+        margin: 0 1em 2.5em
+        border-radius: 5px
+        transition:  box-shadow 0.3s ease-out
+        &:hover
+            box-shadow: 0px 5px 31px -1px rgba(0, 0, 0, 0.3)
+            .add
+                opacity: 1
+                transform: translate3d(0, 0, 0)
+        .add
+            cursor: pointer
+            position: absolute
+            color:  #fff
+            font-weight: bold
+            top: 15px
+            right: 20px
+            font-size: 2rem
+            opacity: 0
+            transform: translate3d(-5px, 0, 0)
+            transition: color 0.3s, opacity 0.3s, transform 0.3s
+            &:hover
+                color: #2F3035
+                .add__text
+                    opacity: 1
+                    transform: translate3d(0, 0, 0)
+        .add__text
+            user-select: none
+            opacity: 0
+            transition: opacity 0.3s, transform 0.3s
+            transform: translate3d(0, 5px, 0)
+            display: block
+            font-weight: bold
+            text-align: center
+            text-transform: uppercase
+            position: absolute
+            top: 100%
+            right: 0px
+            font-size: 10px
+            width: 100px
+            color: #ddd
+            background-color: #2F3035
+            padding: 8px 2px
+            border-radius: 3px
+        .product__info
+            width: 100%
+            background-color: #F8F8F8
+            border-bottom-left-radius: 5px
+            border-bottom-right-radius: 5px
+            padding: 10px
+            position: absolute
+            bottom: 0
+            .name
+                display: inline-block
+                text-transform: uppercase
+                font-weight: 600
+                color: #555
+                margin-bottom: 5px
+            .price
+                float: right
+                font-weight: bold
+                font-size: 2rem
+                color: #111
+            .desc
+                font-weight: 400
+                text-transform: uppercase
+                font-size: 0.8rem
+                color: #b1b1b3
+
+
+
+////////////////////////////////////////////////////////
+///                 SHOPPING CART                     //
+///..................................................//
+.shopping__container
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    overflow: hidden
+    width: 100%
+    height: 100%
+    background-color: rgba(76,91,92,0.9)
+    z-index: 100
+    .wrapper
+        position: relative
+        overflow-x: hidden
+        overflow-y: auto
+        height: 100%
+        width: 100%
+    .close
+        position: fixed
+        cursor: pointer
+        top: 25px
+        right: 25px
+        font-size: 2rem
+        color: #fff
+    .shopping__cart--container
+        padding: 30px
+        max-width: 768px
+        border-radius: 5px
+        background-color: #fff
+        margin: 2rem auto
+        overflow: hidden
+        .heading
+            text-transform: uppercase
+            letter-spacing: 2px
+            font-size: 1.5rem
+            color: #767A7D
+            border-bottom: 1px solid rgba(118, 122, 125, 0.2)
+            padding-bottom: 10px
+
+.heading.coupon, .heading.summary
+    display: none
+    margin-top: 10px
+
+.voucher__container
+    display: none
+
+.products__container .noproduct
+    height: 112px
+    line-height: 56px
+    padding: 20px 10px
+    text-align: center
+    font-size: 1.2rem
+    color: #767A7D
+
+.checkout__item
+    width: 100%
+    overflow: auto
+    zoom: 1
+    display: flex
+    flex-direction: row
+    align-items: center
+    text-align: center
+    color: #7E7F84
+    transition: background-color 0.3s ease-out
+    padding: 20px 10px
+    &:hover
+        background-color: rgba(217, 217, 217, 0.3)
+    .img
+        width: 54px
+        height: 72px
+        background-color: rgb(255, 218, 58)
+        border-radius: 5px
+    .name
+        width: 40%
+    .quantity
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 10%
+        input
+            margin: 0 10px
+            width: 30px
+            height: 30px
+            background-color: #e7edee
+            outline: none
+            border: none
+            border-radius: 50%
+            text-align: center
+            color: #7E7F84
+        div
+            cursor: pointer
+    .price
+        width: 30%
+    .remove
+        font-size: 1.5rem
+        width: 10%
+        i
+            cursor: pointer
+            transition: all 0.2s ease-in
+            &:hover
+                color: red
+                transform: scale(1.1)
+
+.voucher__container
+    padding: 30px 10px
+    color: #7E7F84
+    div
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        input
+            margin-left: 10px
+            outline: none
+            color: #7E7F84
+            width: 150px
+        .button
+            outline: none
+            border: none
+            appearance: none
+            border-radius: 5px
+            text-transform: uppercase
+            cursor: pointer
+            text-align: center
+            width: 150px
+            background-color: #ffd319
+            padding: 10px
+            color: #fff
+            font-weight: 500
+            letter-spacing: 1px
+            transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+            &:hover
+                background-color: #FECE00
+            &:active
+                background-color: #e6bc08
+
+.grandtotal__container
+    padding: 20px 10px
+    display: none
+    flex-direction: column
+    align-items: flex-end
+    .subtotal, .shipping, .grandtotal, .tax, .discount
+        margin-top: 10px
+        &:first-child
+            margin-top: 0
+    .discount
+        display: none
+    .tax
+        border-bottom: 1px solid rgba(118, 122, 125, 0.4)
+        padding-bottom: 10px
+    .grandtotal
+        font-weight: 700
+    div
+        display: flex
+        width: 250px
+        justify-content: flex-end
+    .desc
+        display: flex
+        justify-content: flex-start
+        color: #7E7F84
+    .price
+        color: #7E878F
+    .button
+        margin-top: 30px
+        outline: none
+        border: none
+        appearance: none
+        border-radius: 5px
+        text-transform: uppercase
+        cursor: pointer
+        text-align: center
+        width: 250px
+        background-color: #ffd319
+        padding: 10px
+        color: #fff
+        font-weight: 500
+        letter-spacing: 1px
+        transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+        &:hover
+            background-color: #FECE00
+        &:active
+            background-color: #e6bc08

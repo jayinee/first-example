@@ -1,0 +1,6 @@
+{
+    "extends": ["cusxio", "cusxio/browser"],
+    "env": {
+        "jquery": true
+    }
+}

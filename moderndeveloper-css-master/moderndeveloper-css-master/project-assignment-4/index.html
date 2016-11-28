@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Assignment 4</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/kazzkiq/balloon.css/master/balloon.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="intro">
+        <h1>Project <br> Assignment 4</h1>
+    </div>
+    <div class="page__control">
+        <div class="nav">
+            <a href="#intro">
+                <span data-balloon-length="small" data-balloon="Welcome !" data-balloon-pos="left" class="dot active"></span>
+            </a>
+        </div>
+        <div class="nav">
+            <a href="#one">
+                <span data-balloon-length="small" data-balloon="Question One" data-balloon-pos="left" class="dot"></span>
+            </a>
+        </div>
+        <div class="nav">
+            <a href="#two">
+                <span data-balloon-length="small" data-balloon="Question Two" data-balloon-pos="left" class="dot"></span>
+            </a>
+        </div>
+        <div class="nav">
+            <a href="#three">
+                <span data-balloon-length="small" data-balloon="Question Three" data-balloon-pos="left" class="dot"></span>
+            </a>
+        </div>
+        <div class="nav">
+            <a href="#four">
+                <span data-balloon-length="small" data-balloon="Question Four" data-balloon-pos="left" class="dot"></span>
+            </a>
+        </div>
+        <div class="nav">
+            <a href="#five">
+                <span data-balloon-length="small" data-balloon="Question Five" data-balloon-pos="left" class="dot"></span>
+            </a>
+        </div>
+        <div class="nav">
+            <a href="#six">
+                <span data-balloon-length="small" data-balloon="Question Six" data-balloon-pos="left" class="dot"></span>
+            </a>
+        </div>
+        <div class="nav">
+            <a href="#seven">
+                <span data-balloon-length="small" data-balloon="Question Seven" data-balloon-pos="left" class="dot"></span>
+            </a>
+        </div>
+        <div class="nav">
+            <a href="#eight">
+                <span data-balloon-length="small" data-balloon="Question Eight" data-balloon-pos="left" class="dot"></span>
+            </a>
+        </div>
+    </div>
+    <div id="one">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <div class="signup">
+                <svg height="44" viewbox="0 0 44 44" width="44" stroke="#454BE6" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" fill-rule="evenodd" stroke-width="2">
+                        <circle cx="22" cy="22" r="1">
+                            <animate attributename="r" begin="0s" calcmode="spline" dur="1.8s" keysplines="0.165, 0.84, 0.44, 1" keytimes="0; 1" repeatcount="indefinite" values="1; 20"></animate>
+                            <animate attributename="stroke-opacity" begin="0s" calcmode="spline" dur="1.8s" keysplines="0.3, 0.61, 0.355, 1" keytimes="0; 1" repeatcount="indefinite" values="1; 0"></animate>
+                        </circle>
+                        <circle cx="22" cy="22" r="1">
+                            <animate attributename="r" begin="-0.9s" calcmode="spline" dur="1.8s" keysplines="0.165, 0.84, 0.44, 1" keytimes="0; 1" repeatcount="indefinite" values="1; 20"></animate>
+                            <animate attributename="stroke-opacity" begin="-0.9s" calcmode="spline" dur="1.8s" keysplines="0.3, 0.61, 0.355, 1" keytimes="0; 1" repeatcount="indefinite" values="1; 0"></animate>
+                        </circle>
+                    </g>
+                </svg>
+                <form autocomplete="off" action="#">
+                    <div>
+                        <input required placeholder="First Name" type="text" />
+                        <p class="hint"></p>
+                    </div>
+                    <div>
+                        <input required placeholder="Last Name" type="text" />
+                        <p class="hint"></p>
+                    </div>
+                    <div>
+                        <input required placeholder="Email" type="email" />
+                        <p class="hint"></p>
+                    </div>
+                    <div>
+                        <input required type="date">
+                        <p class="hint"></p>
+                    </div>
+                    <div>
+                        <input required placeholder="Password" type="password" />
+                        <p class="hint"></p>
+                    </div>
+                    <button type="submit">
+                        Submit <i class="ion-android-arrow-forward"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="question">Already have an account? <a href="">Sign In</a></div>
+        </div>
+    </div>
+    <div id="two">
+        <div class="container">
+            <div class="search">
+                <div class="input">
+                    <input placeholder="Search" type="search" />
+                </div>
+                <div class="categories">
+                    <select name="cat">
+                        <option value="All Category">All Category</option>
+                        <option value="All Category">Movies</option>
+                        <option value="All Category">Books</option>
+                        <option value="All Category">Foods</option>
+                        <option value="All Category">Fashion</option>
+                        <option value="All Category">Leisure</option>
+                    </select>
+                </div>
+                <button class="submit">
+                    <i class="ion-search"></i></button>
+            </div>
+            <div class="note">NOTE: There is a problem with this question.</div>
+        </div>
+    </div>
+    <div id="three">
+        <div class="container">
+            <div class="question">
+                <h1>What is your favourite Operating System?</h1>
+                <form action="">
+                    <div class="opt">
+                        <input required id="r1" type="radio" value="Windows" name="opt" />
+                        <div class="radio"></div>
+                        <label for="r1">Windows</label>
+                    </div>
+                    <div class="opt">
+                        <input required id="r2" type="radio" value="Mac OS X" name="opt" />
+                        <div class="radio"></div>
+                        <label for="r2">Mac OS X</label>
+                    </div>
+                    <div class="opt">
+                        <input required id="r3" type="radio" value="Arch Linux" name="opt" />
+                        <div class="radio"></div>
+                        <label for="r3">Arch Linux</label>
+                    </div>
+                    <div class="opt">
+                        <input required id="r4" type="radio" value="Ubuntu" name="opt" />
+                        <div class="radio"></div>
+                        <label for="r4">Ubuntu</label>
+                    </div>
+                    <div class="opt">
+                        <input required id="r5" type="radio" value="other" name="opt" />
+                        <div class="radio"></div>
+                        <label for="r5">Other, specify:</label>
+                    </div>
+                    <input placeholder="e.g. Redox" type="text" />
+                    <div class="button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="four">
+        <div class="container">
+            <h1>Sign In</h1>
+            <div class="signup">
+                <svg height="44" viewbox="0 0 44 44" width="44" stroke="#454BE6" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" fill-rule="evenodd" stroke-width="2">
+                        <circle cx="22" cy="22" r="1">
+                            <animate attributename="r" begin="0s" calcmode="spline" dur="1.8s" keysplines="0.165, 0.84, 0.44, 1" keytimes="0; 1" repeatcount="indefinite" values="1; 20"></animate>
+                            <animate attributename="stroke-opacity" begin="0s" calcmode="spline" dur="1.8s" keysplines="0.3, 0.61, 0.355, 1" keytimes="0; 1" repeatcount="indefinite" values="1; 0"></animate>
+                        </circle>
+                        <circle cx="22" cy="22" r="1">
+                            <animate attributename="r" begin="-0.9s" calcmode="spline" dur="1.8s" keysplines="0.165, 0.84, 0.44, 1" keytimes="0; 1" repeatcount="indefinite" values="1; 20"></animate>
+                            <animate attributename="stroke-opacity" begin="-0.9s" calcmode="spline" dur="1.8s" keysplines="0.3, 0.61, 0.355, 1" keytimes="0; 1" repeatcount="indefinite" values="1; 0"></animate>
+                        </circle>
+                    </g>
+                </svg>
+                <form action="#" autocomplete="off">
+                    <div>
+                        <input required placeholder="Username" type="text">
+                        <p class="hint"></p>
+                    </div>
+                    <div>
+                        <input required placeholder="Password" type="password">
+                        <p class="hint"></p>
+                    </div>
+                    <button type="submit">Sign In
+                        <i class="ion-android-arrow-forward"></i></button>
+                    <h1>Forgot Password ?</h1>
+                </form><span class="or">or connect with</span>
+                <div class="social">
+                    <div class="facebook">
+                        <i class="ion-social-facebook"></i>
+                    </div>
+                    <div class="twitter">
+                        <i class="ion-social-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                Don't have an account? <a href="">Register Now</a>
+            </div>
+        </div>
+    </div>
+    <div id="five">
+        <div class="container">
+            <div class="controls">
+                <div id="r" class="control">
+                    <div class="color">R</div>
+                    <div class="header"></div>
+                    <input type="range" min="0" max="255" value="0" step="5">
+                    <div class="sliders">
+                        <div class="lower"></div>
+                        <div class="upper"></div>
+                    </div>
+                </div>
+                <div id="g" class="control">
+                    <div class="color">G</div>
+                    <input type="range" min="0" max="255" value="110" step="5">
+                    <div class="sliders">
+                        <div class="lower"></div>
+                        <div class="upper"></div>
+                    </div>
+                </div>
+                <div id="b" class="control">
+                    <div class="color">B</div>
+                    <input type="range" min="0" max="255" value="180" step="5">
+                    <div class="sliders">
+                        <div class="lower"></div>
+                        <div class="upper"></div>
+                    </div>
+                </div>
+                <div id="a" class="control">
+                    <div class="color">A</div>
+                    <input type="range" min="0" max="1" step="0.01">
+                    <div class="sliders">
+                        <div class="lower"></div>
+                        <div class="upper"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="output">
+                <div>
+                    <input id="rgba" type="text" />
+                    <button class="rgba">Copy
+                        <i class="ion-ios-copy"></i>
+                    </button>
+                </div>
+                <div>
+                    <input id="hex" type="text" />
+                    <button class="hex">Copy
+                        <i class="ion-ios-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="six">
+        <div class="container">
+            <div class="form__name">Shipping and Billing Form</div>
+            <div class="form__container">
+                <section class="form__personal">
+                    <div class="sections">
+                        <div class="box">1</div><span>Personal Information</span>
+                    </div>
+                    <div class="personal--form">
+                        <form class="form--name" action="">
+                            <div class="first">
+                                <label for="firstname">First Name</label>
+                                <input placeholder="e.g. Richard" id="firstname" type="text" />
+                                <p class="hint"></p>
+                            </div>
+                            <div class="last">
+                                <label for="lastname">Last Name</label>
+                                <input placeholder="e.g. Bovell" id="lastname" type="text" />
+                                <p class="hint"></p>
+                            </div>
+                            <div class="email">
+                                <label for="email">Email</label>
+                                <input placeholder="e.g. rb@apple.com" id="email" type="email" />
+                                <p class="hint"></p>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="form__billing">
+                    <div class="sections">
+                        <div class="box billing">2</div><span>Billing Address</span>
+                    </div>
+                    <div class="shipping--form">
+                        <form class="form--shipping" action="">
+                            <div class="row one">
+                                <div class="address">
+                                    <label for="address-one">Address Line 1</label>
+                                    <input placeholder="e.g. 1 Infinite Loop" id="address-one" type="text" />
+                                    <p class="hint"></p>
+                                </div>
+                                <div class="address-two">
+                                    <label for="address-two">Address Line 2</label>
+                                    <input id="address-two" type="text" />
+                                    <p class="hint"></p>
+                                </div>
+                            </div>
+                            <div class="row two">
+                                <div class="city">
+                                    <label for="city">City</label>
+                                    <input placeholder="e.g. Cupertino" id="city" type="text" />
+                                    <p class="hint"></p>
+                                </div>
+                                <div class="state">
+                                    <label for="state">State / Province / Region</label>
+                                    <input placeholder="e.g. California" id="state" type="text" />
+                                    <p class="hint"></p>
+                                </div>
+                            </div>
+                            <div class="row three">
+                                <div class="zip">
+                                    <label for="zip">Zip / Postal Code</label>
+                                    <input placeholder="e.g. 95014" id="zip" type="text" />
+                                    <p class="hint"></p>
+                                </div>
+                                <div class="country">
+                                    <label for="country">Country</label>
+                                    <input placeholder="e.g. U.S.A" id="country" type="text" />
+                                    <p class="hint"></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="form__shipping">
+                    <div class="sections">
+                        <div class="box">3</div><span>Shipping Address</span>
+                    </div>
+                    <div class="shipping--form">
+                        <form class="form--shipping" action="">
+                            <div class="row one">
+                                <div class="address">
+                                    <label for="addressOne">Address Line 1</label>
+                                    <input id="addressOne" type="text" />
+                                    <p class="hint"></p>
+                                </div>
+                                <div class="address-two">
+                                    <label for="addressTwo">Address Line 2</label>
+                                    <input id="addressTwo" type="text" />
+                                    <p class="hint"></p>
+                                </div>
+                            </div>
+                            <div class="row two">
+                                <div class="city">
+                                    <label for="cityInput">City</label>
+                                    <input id="cityInput" type="text" />
+                                    <p class="hint"></p>
+                                </div>
+                                <div class="state">
+                                    <label for="stateInput">State / Province / Region</label>
+                                    <input id="stateInput" type="text" />
+                                    <p class="hint"></p>
+                                </div>
+                            </div>
+                            <div class="row three">
+                                <div class="zip">
+                                    <label for="zipCode">Zip / Postal Code</label>
+                                    <input id="zipCode" type="text" />
+                                    <p class="hint"></p>
+                                </div>
+                                <div class="country">
+                                    <label for="countryInput">Country</label>
+                                    <input id="countryInput" type="text" />
+                                    <p class="hint"></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <div class="form__question">
+                    <input type="checkbox" />
+                    <p>Is your shipping address the same as your billing address ?</p>
+                    <p class="error"></p>
+                </div>
+                <div class="form__confirmation">
+                    <button>Confirm Information</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="seven">
+        <div class="container">
+            <div class="card">
+                <form action="">
+                    <div class="form__name">
+                        Scheduling Form
+                    </div>
+                    <div class="time__container">
+                        <div class="section">
+                            <div class="box">
+                                1
+                            </div><span>Date &amp; Time</span>
+                        </div>
+                        <div class="form__time">
+                            <div class="date">
+                                <label for="date">Date</label>
+                                <input id="date" type="date">
+                            </div>
+                            <div class="time">
+                                <label for="time">Time</label>
+                                <input id="time" type="time">
+                            </div>
+                            <div class="timezone">
+                                <label for="timezone">Timezone</label>
+                                <select name="timezone">
+                                    <option value="-12">
+                                        (GMT -12:00) Eniwetok, Kwajalein
+                                    </option>
+                                    <option value="-11">
+                                        (GMT -11:00) Midway Island, Samoa
+                                    </option>
+                                    <option value="-10">
+                                        (GMT -10:00) Hawaii
+                                    </option>
+                                    <option value="-9">
+                                        (GMT -9:00) Alaska
+                                    </option>
+                                    <option value="-8">
+                                        (GMT -8:00) Pacific Time (US &amp; Canada)
+                                    </option>
+                                    <option value="-7">
+                                        (GMT -7:00) Mountain Time (US &amp; Canada)
+                                    </option>
+                                    <option value="-6">
+                                        (GMT -6:00) Central Time (US &amp; Canada), Mexico City
+                                    </option>
+                                    <option value="-5">
+                                        (GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima
+                                    </option>
+                                    <option value="-4.5">
+                                        (GMT -4:30) Caracas
+                                    </option>
+                                    <option value="-4">
+                                        (GMT -4:00) Atlantic Time (Canada), La Paz, Santiago
+                                    </option>
+                                    <option value="-3.5">
+                                        (GMT -3:30) Newfoundland
+                                    </option>
+                                    <option value="-3">
+                                        (GMT -3:00) Brazil, Buenos Aires, Georgetown
+                                    </option>
+                                    <option value="-2">
+                                        (GMT -2:00) Mid-Atlantic
+                                    </option>
+                                    <option value="-1">
+                                        (GMT -1:00 hour) Azores, Cape Verde Islands
+                                    </option>
+                                    <option selected="selected" value="0">
+                                        (GMT) Western Europe Time, London, Lisbon, Casablanca, Greenwich
+                                    </option>
+                                    <option value="1">
+                                        (GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris
+                                    </option>
+                                    <option value="2">
+                                        (GMT +2:00) Kaliningrad, South Africa, Cairo
+                                    </option>
+                                    <option value="3">
+                                        (GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg
+                                    </option>
+                                    <option value="3.5">
+                                        (GMT +3:30) Tehran
+                                    </option>
+                                    <option value="4">
+                                        (GMT +4:00) Abu Dhabi, Muscat, Yerevan, Baku, Tbilisi
+                                    </option>
+                                    <option value="4.5">
+                                        (GMT +4:30) Kabul
+                                    </option>
+                                    <option value="5">
+                                        (GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent
+                                    </option>
+                                    <option value="5.5">
+                                        (GMT +5:30) Mumbai, Kolkata, Chennai, New Delhi
+                                    </option>
+                                    <option value="5.75">
+                                        (GMT +5:45) Kathmandu
+                                    </option>
+                                    <option value="6">
+                                        (GMT +6:00) Almaty, Dhaka, Colombo
+                                    </option>
+                                    <option value="6.5">
+                                        (GMT +6:30) Yangon, Cocos Islands
+                                    </option>
+                                    <option value="7">
+                                        (GMT +7:00) Bangkok, Hanoi, Jakarta
+                                    </option>
+                                    <option value="8">
+                                        (GMT +8:00) Beijing, Perth, Singapore, Hong Kong
+                                    </option>
+                                    <option value="9">
+                                        (GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk
+                                    </option>
+                                    <option value="9.5">
+                                        (GMT +9:30) Adelaide, Darwin
+                                    </option>
+                                    <option value="10">
+                                        (GMT +10:00) Eastern Australia, Guam, Vladivostok
+                                    </option>
+                                    <option value="11">
+                                        (GMT +11:00) Magadan, Solomon Islands, New Caledonia
+                                    </option>
+                                    <option value="12">
+                                        (GMT +12:00) Auckland, Wellington, Fiji, Kamchatka
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message__container">
+                        <div class="section">
+                            <div class="box">
+                                2
+                            </div><span>Your Message</span>
+                        </div>
+                        <textarea placeholder="e.g. Please do .. Also, .." cols="50" rows="5"></textarea>
+                    </div>
+                    <div class="contact__container">
+                        <div class="section">
+                            <div class="box">
+                                3
+                            </div><span>Contact Information</span>
+                        </div>
+                        <div action="" class="form__contact">
+                            <div class="cname">
+                                <label for="cname">Name</label>
+                                <input placeholder="e.g. Richard Bovell" id="cname" type="text">
+                            </div>
+                            <div class="num">
+                                <label for="num">Phone Number</label>
+                                <input id="num" type="text">
+                            </div>
+                            <div class="email">
+                                <label for="cemail">Email</label>
+                                <input placeholder="e.g. rb@email.com" id="cemail" type="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__confirmation">
+                        <button type="submit">Confirm Information</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="eight">
+        <div class="container">
+            <div class="price">
+                <h1>Awesome, that's $99.99 !</h1>
+            </div>
+            <form class="card__container">
+                <div class="card">
+                    <div class="row paypal">
+                        <div class="left">
+                            <input required id="pp" type="radio" name="payment" />
+                            <div class="radio"></div>
+                            <label for="pp">Paypal</label>
+                        </div>
+                        <div class="right">
+                            <img src="http://i68.tinypic.com/2rwoj6s.png" alt="paypal" />
+                        </div>
+                    </div>
+                    <div class="row credit">
+                        <div class="left">
+                            <input required id="cd" type="radio" name="payment" />
+                            <div class="radio"></div>
+                            <label for="cd">Debit/ Credit Card</label>
+                        </div>
+                        <div class="right">
+                            <img src="http://i66.tinypic.com/5knfq8.png" alt="visa" />
+                            <img src="http://i67.tinypic.com/14y4p1.png" alt="mastercard" />
+                            <img src="http://i63.tinypic.com/1572ot1.png" alt="amex" />
+                            <img src="http://i64.tinypic.com/2i92k4p.png" alt="maestro" />
+                        </div>
+                    </div>
+                    <div class="row cardholder">
+                        <div class="info">
+                            <label for="eightname">Name</label>
+                            <input required placeholder="e.g. Richard Bovell" id="eightname" type="text" />
+                        </div>
+                    </div>
+                    <div class="row number">
+                        <div class="info">
+                            <label for="cardnumber">Card number</label>
+                            <input required id="cardnumber" type="text" pattern="[0-9]{16,19}" maxlength="19" placeholder="8888-8888-8888-8888" />
+                        </div>
+                    </div>
+                    <div class="row details">
+                        <div class="left">
+                            <label for="expiry-date">Expiry</label>
+                            <select id="expiry-date">
+                                <option>MM</option>
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <span>/</span>
+                            <select id="expiryDate">
+                                <option>YYYY</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <label for="cvv">CVC/CVV</label>
+                            <input required type="text" maxlength="4" placeholder="123" />
+                            <span data-balloon-length="medium" data-balloon="The 3 or 4-digit number on the back of your card." data-balloon-pos="up">i</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit"><i class="ion-locked"></i> Confirm and Pay</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
+    <script type="text/javascript" src="js/validator.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+</body>
+
+</html>

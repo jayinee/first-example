@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900)
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800)
+
+*
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+html
+    font-family: 'Lato', sans-serif
+    background: linear-gradient(135deg, #A763CB 5%, #F69377 78%)
+    height: 100vh
+
+h1
+    text-align: center
+    margin-top: 100px
+    font-weight: 300
+    letter-spacing: 1px
+    margin-bottom: 50px
+    color: #fff
+
+.container
+    max-width: 60rem
+    margin: 0 auto
+
+.app
+    width: 400px
+    height: 600px
+    margin: auto
+
+.cal__container
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    border-radius: 15px
+    box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.50)
+
+.cal__results
+    user-select: none
+    cursor: default
+    font-family: 'Open Sans'
+    border-top-left-radius: 15px
+    border-top-right-radius: 15px
+    background-color: #fff
+    display: flex
+    flex-direction: column
+    flex: 1.7
+    padding-right: 40px
+    padding-left: 40px
+    .last__result, .current__result
+        display: flex
+        flex: 1
+        justify-content: flex-end
+        overflow: hidden
+    .last__result
+        color: #8E97A2
+        font-size: 1.3rem
+        font-weight: 300
+        align-items: flex-end
+    .current__result
+        align-items: flex-start
+        flex: 1.1
+        font-size: 2.5rem
+        font-weight: 400
+        letter-spacing: 1.5px
+
+.cal__buttons
+    display: flex
+    flex: 5
+
+.br
+    border-bottom-right-radius: 15px
+.bl
+    border-bottom-left-radius: 15px
+
+button
+    font-size: 1.9rem
+    color: #444
+    font-weight: 400
+    margin: 0
+    padding: 0
+    line-height: 0
+    border: none
+    box-shadow: inset 1px 1px 0 0 #DECAE5
+    background-color: #fff
+    outline: none
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+    &:hover
+        font-size: 2.2rem
+
+.row.one
+    button
+        background-color: #F1E1FD
+        &:hover
+            background-color: #e3e1fd
+
+.row.two, .row.three
+    button
+        background-color: #FAEDFF
+        &:hover
+            background-color: #edf2ff
+
+.row.four, .row.five
+    button
+        background-color: #F1EDFF
+        &:hover
+            background-color: #fbffed
+
+.operators
+    background: linear-gradient(to bottom, #F7CF62, #FF9D66 82%)
+    button
+        font-size: 2em
+        font-weight: 300
+        color: #fff
+        background-color: transparent
+        &:hover
+            background-color: rgba(50, 50, 50, 0.10)
+            font-size: 3rem
+
+// FLEX
+.row
+    display: flex
+    flex-direction: row
+
+.column
+    display: flex
+    flex-direction: column
+
+.f1
+    flex: 1
+.f2
+    flex: 2
+.f3
+    flex: 3
+
+// button
+.back-button
+    text-decoration: none
+    display: block
+    position: fixed
+    top: 25px
+    left: 25px
+    font-size: 1rem
+    font-weight: 400
+    letter-spacing: 1px
+    width: 140px
+    background-color: transparent
+    border: none
+    color: #fff
+    padding: 18px
+    border-radius: 5px
+    outline: none
+    transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+    &:hover
+        color: #F7CF62
